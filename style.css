@@ -562,3 +562,48 @@ footer {
     -webkit-overflow-scrolling: touch;
   }
 }
+
+@media (max-width: 768px) {
+  /* Fix header layout on mobile screens */
+  header, nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem 0;
+  }
+
+  /* Make navigation links wrap cleanly horizontally or scroll smoothly */
+  nav ul, .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  /* Stack main hero buttons cleanly */
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .hero-buttons a, 
+  .hero-buttons button {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Stack grid items vertically */
+  .gallery-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  /* Make tables scrollable horizontally without breaking page layout */
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
