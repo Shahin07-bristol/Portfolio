@@ -545,3 +545,20 @@ footer {
   object-fit: contain;
   border-radius: 3px;
 }
+/* ==========================================
+   Mobile Responsiveness
+   ========================================== */
+@media (max-width: 768px) {
+  /* Stack image grid cards vertically on small screens */
+  .gallery-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  /* Make tables scrollable horizontally without breaking the screen layout */
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
