@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shahin Akbarzade · Portfolio</title>
+  <link rel="icon" type="image/jpeg" href="assets/Profile.jpg">
+  <link rel="stylesheet" href="style.css?v=major">
+</head>
+<body>
+
+  <!-- Sticky Navigation Header -->
+  <header>
+    <div class="header-container">
+      <a href="#top" class="logo-link">Shahin Akbarzade</a>
+      <nav aria-label="Main Navigation">
+        <a href="#project-1">DIY RC Plane</a>
+        <a href="#project-2">Custom Flight Controller</a>
+        <a href="#project-3">Wind Tunnel</a>
+        <a href="#project-4">Flight HUD</a>
+        <a href="#project-5">Radar System</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.linkedin.com/in/shahin-akbarzade-49428327b" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Intro Section -->
+    <section id="top" class="hero-section">
+      <div class="hero-text">
+        <p class="degree-tag">Aerospace Engineering Student | University of Bristol</p>
+        <h1>Shahin Akbarzade</h1>
+        <p class="specialty-tag">Aerospace | Avionics</p>
+        <p class="bio">
+          Aerospace Engineering undergraduate at the University of Bristol with hands-on experience in autonomous-grade RC aircraft design, embedded avionics systems, and experimental aerodynamics.
+        </p>
+        <div class="hero-actions">
+          <a href="#project-1" class="btn primary-btn">View Projects</a>
+          <a href="https://www.linkedin.com/in/shahin-akbarzade-49428327b" target="_blank" rel="noopener" class="btn secondary-btn">LinkedIn ↗</a>
+          <a href="#contact" class="btn secondary-btn">Contact</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="assets/Profile.jpg" alt="Profile photo of Shahin Akbarzade">
+      </div>
+    </section>
+
+    <!-- Project 01 Details -->
+    <section id="project-1" class="project-card">
+      <div class="project-header">
+        <div>
+          <span class="project-num">Project 01</span>
+          <h2>DIY RC Plane</h2>
+          <p class="project-summary">Designed, built, and flight-tested an autonomous-grade remote-controlled aircraft from scratch. Integrated multidisciplinary systems including a custom 3D-printed landing gear, 3S electric propulsion, and multi-channel 2.4 GHz telemetry avionics within an optimized foamboard airframe.</p>
+        </div>
+        <dl class="project-details-grid">
+          <div><dt>Project</dt><dd>DIY RC Plane</dd></div>
+          <div><dt>Type</dt><dd>Personal Project</dd></div>
+          <div><dt>Date</dt><dd>March 2026</dd></div>
+        </dl>
+      </div>
+
+      <div class="project-body">
+        <div class="project-column">
+          <h3>Component & Subsystem Breakdown</h3>
+          <ul>
+            <li><b>Power & Propulsion:</b> Driven by a 2122 1400kV brushless outrunner motor paired with a 9050 propeller, controlled by a 40A Electronic Speed Controller (ESC). Powered by a 3S 2000mAh LiPo battery pack delivering high-discharge energy.</li>
+            <li><b>Radio Control & Electronics:</b> Controlled using a FlySky FS-i6 6-channel 2.4 GHz transmitter paired with an FS-i6B receiver running on the AFHDS 2A protocol for a reliable, interference-free link. The receiver feeds signal to the servos and relays real-time battery voltage telemetry back to the transmitter screen.</li>
+            <li><b>Mechanics & Actuation:</b> 9g micro servos configured to actuate control surfaces via precision pushrod linkages, converting rotational servo torque into linear control surface movement.</li>
+            <li><b>Landing Gear:</b> Fixed 3D-printed landing gear featuring elastic tires for shock absorption during taxiing and landings, configured with a tricycle layout (two main wheels near the middle and one steerable/tail wheel at the bottom of the rudder).</li>
+            <li><b>Airframe & Aerodynamics:</b> Fabricated the wing structure, fuselage, and empennage using lightweight 5mm foamboard. Designed the airfoil geometry and wing incidence angle to balance low stall speeds with stable glide characteristics under varying wind conditions.</li>
+            <li><b>Electrical Distribution & Safety:</b> Engineered a secure, accessible power distribution layout featuring an XT60 main battery connector, clean wire routing and management, and a dedicated layout to prevent electromagnetic interference near the receiver.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="media-section">
+        <h3>Build & System Verification Gallery</h3>
+        <div class="media-grid">
+          <figure>
+            <img class="lightbox-trigger" src="RC Plane/RC.jpeg" alt="Completed DIY RC Plane">
+            <figcaption><b>Flight-Ready Airframe</b></figcaption>
+          </figure>
+          <figure>
+            <img class="lightbox-trigger" src="RC Plane/Components.jpeg" alt="Internal electronic layout of RC plane">
+            <figcaption><b>Hardware & Avionics</b></figcaption>
+          </figure>
+          <figure>
+            <img class="lightbox-trigger" src="RC Plane/Schematic.png" alt="System integration block schematic">
+            <figcaption><b>System Architecture</b></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project 02 Details -->
+    <section id="project-2" class="project-card">
+      <div class="project-header">
+        <div>
+          <span class="project-num">Project 02</span>
+          <h2>Custom Flight Controller</h2>
+          <p class="project-summary">A custom-built, protoboard-integrated flight controller developed on Raspberry Pi Pico to log 9-DOF flight motion, barometric altitude, and GPS telemetry with long-range wireless ground station transmission.</p>
+        </div>
+        <dl class="project-details-grid">
+          <div><dt>Project</dt><dd>Custom Flight Controller</dd></div>
+          <div><dt>Type</dt><dd>Personal Project</dd></div>
+          <div><dt>Category</dt><dd>Embedded Systems</dd></div>
+          <div><dt>Tools</dt><dd>Fritzing, Thonny, Soldering</dd></div>
+          <div><dt>Status</dt><dd>In Progress</dd></div>
+        </dl>
+      </div>
+
+      <div class="detail-section">
+        <h3>Project Goals</h3>
+        <ul>
+          <li><b>Primary Goal:</b> Engineering a custom flight controller on a protoboard to track aircraft speed, altitude, location, and orientation in real time, while transmitting telemetry wirelessly to a ground laptop.</li>
+        </ul>
+      </div>
+
+      <div class="detail-section">
+        <h3>Hardware & Component Specifications</h3>
+        <div class="table-container">
+          <table class="specs-table">
+            <thead>
+              <tr>
+                <th>Subsystem / Role</th>
+                <th>Target Component</th>
+                <th>Measured Parameter / Function</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Processing (Brain)</td>
+                <td>Raspberry Pi Pico (RP2040)</td>
+                <td>Telemetry Processing & Control Logic</td>
+              </tr>
+              <tr>
+                <td>Orientation (IMU)</td>
+                <td>MPU6050</td>
+                <td>Pitch, Roll, Yaw Rates & Acceleration</td>
+              </tr>
+              <tr>
+                <td>Altitude & Pressure</td>
+                <td>BMP280 Barometric Sensor</td>
+                <td>Barometric Altitude & Pressure Tracking</td>
+              </tr>
+              <tr>
+                <td>GPS & Location</td>
+                <td>Neo-8M GPS Module</td>
+                <td>Ground Speed, Coordinates & Heading</td>
+              </tr>
+              <tr>
+                <td>Compass / Heading</td>
+                <td>GY-271 (HMC5883L) Magnetometer</td>
+                <td>Magnetic Compass Heading</td>
+              </tr>
+              <tr>
+                <td>Telemetry Wireless Link</td>
+                <td>HC-12 Transceiver Module</td>
+                <td>Long-Range Ground Station Data Stream</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="media-section">
+        <h3>Build & System Verification Gallery</h3>
+        <div class="media-grid">
+          <figure>
+            <img class="lightbox-trigger" src="Flight Controller/Circuit.jpeg" alt="Internal electronic layout of flight controller">
+            <figcaption><b>Protoboard Layout</b></figcaption>
+          </figure>
+          <figure>
+            <img class="lightbox-trigger" src="Flight Controller/Schematic.png" alt="System integration block schematic">
+            <figcaption><b>Schematic Diagram</b></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project 03 Details -->
+    <section id="project-3" class="project-card">
+      <div class="project-header">
+        <div>
+          <span class="project-num">Project 03</span>
+          <h2>Wind Tunnel</h2>
+          <p class="project-summary">Designing and prototyping a functional wind tunnel using 3D CAD, integrating and developing its electronic systems, and applying aerodynamic principles to calculate and analyse lift and drag forces for different test configurations.</p>
+        </div>
+        <dl class="project-details-grid">
+          <div><dt>Project</dt><dd>Wind Tunnel</dd></div>
+          <div><dt>Type</dt><dd>Group Project | SRC Cup</dd></div>
+          <div><dt>Tools</dt><dd>CAD, 3D Printing, Sensors</dd></div>
+          <div><dt>Status</dt><dd>In Progress</dd></div>
+        </dl>
+      </div>
+
+      <div class="detail-section">
+        <h3>Project Overview & Aerodynamic Target</h3>
+        <p>
+          Building a modular scale wind tunnel aimed at evaluating aerodynamic downforce, drag reduction, and flow behavior for the 
+          <a href="https://srccup.co.uk/" target="_blank" rel="noopener" class="highlight-link">S-RC Cup ↗</a> competition.
+        </p>
+        <ul>
+          <li><b>S-RC Cup Context:</b> The <a href="https://srccup.co.uk/" target="_blank" rel="noopener" class="highlight-link">S-RC Cup ↗</a> is an engineering motorsport competition where students design, manufacture, and race radio-controlled cars, applying real-world engineering principles to optimize performance.</li>
+          <li><b>Hybrid Material Assembly:</b> Planning a hybrid construction using 3D-printed structural ducting (contraction cone, diffuser, and fan housing) combined with laser-cut transparent acrylic side walls for full optical visibility.</li>
+          <li><b>Modularity & Future Upgrades:</b> Structured to allow future additions, such as a load-cell balance system to measure lift and drag, as well as smoke injection for visual flow analysis.</li>
+        </ul>
+      </div>
+
+      <div class="detail-section">
+        <h3>Key Responsibilities & Contributions</h3>
+        <ul>
+          <li><b>3D CAD Modeling & Prototyping:</b> Designed and modeled the wind tunnel structural assembly using 3D CAD software for fabrication.</li>
+          <li><b>Component Sourcing & Trade Studies:</b> Researched, evaluated, and selected appropriate electronic sensors and hardware components optimized for the test rig.</li>
+          <li><b>Electronics & Data Acquisition (In Progress):</b> Currently developing the wiring architecture and data acquisition code for the electronic subsystems.</li>
+        </ul>
+      </div>
+
+      <!-- Hardware Component Specification Table -->
+      <div class="detail-section">
+        <h3>Hardware & Component Specifications</h3>
+        <div class="table-container">
+          <table class="specs-table">
+            <thead>
+              <tr>
+                <th>Subsystem / Role</th>
+                <th>Target Component</th>
+                <th>Measured Parameter / Function</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Power Supply</td>
+                <td>12V 200W PSU & Buck Converter (12V → 5V)</td>
+                <td>High-Current Rail & Logic Voltage Regulation with Master Switching</td>
+              </tr>
+              <tr>
+                <td>Processing (Brain)</td>
+                <td>ESP32 Microcontroller</td>
+                <td>Core Data Acquisition, Logic Processing & Wireless Telemetry</td>
+              </tr>
+              <tr>
+                <td>Airspeed</td>
+                <td>Pitot Tube + Pressure Sensor</td>
+                <td>Airflow Velocity & Dynamic Pressure</td>
+              </tr>
+              <tr>
+                <td>Aerodynamic Force Measurement</td>
+                <td>Dual Load Cells + HX711 24-bit ADC Amplifiers</td>
+                <td>Real-Time Lift & Drag Force Tracking / Strain Measurement</td>
+              </tr>
+              <tr>
+                <td>Airflow Generation & Control</td>
+                <td>High-Power DC Fan + PWM Speed Controller</td>
+                <td>Adjustable Air Velocity & Flow Rate Regulation</td>
+              </tr>
+              <tr>
+                <td>Telemetry & Auxiliaries</td>
+                <td>Status Display Screen, Humidifier & Switched LED Array</td>
+                <td>Test Environment Monitoring & Visual Status Indicators</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="media-section">
+        <h3>Build & Verification Gallery</h3>
+        <div class="media-grid">
+          <figure>
+            <img class="lightbox-trigger" src="Wind Tunnel/1.png" alt="3D CAD Isometric View of Wind Tunnel">
+            <figcaption><b>3D CAD Assembly:</b> Full 3D model displaying contraction cone, test chamber, and exit diffuser section.</figcaption>
+          </figure>
+          <figure>
+            <img class="lightbox-trigger" src="Wind Tunnel/2.png" alt="3D CAD Side View of Test Section">
+            <figcaption><b>Test Section Detail:</b> Side profile highlighting the central test chamber and electronic sensor mounting interface.</figcaption>
+          </figure>
+          <figure>
+            <img class="lightbox-trigger" src="Wind Tunnel/Schematic.png" alt="Additional Wind Tunnel CAD view">
+            <figcaption><b>Schematic Diagram</b></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project 04 Details -->
+    <section id="project-4" class="project-card">
+      <div class="project-header">
+        <div>
+          <span class="project-num">Project 04</span>
+          <h2>Avionics Gyroscope & HUD Flight Display</h2>
+          <p class="project-summary">Engineered a real-time flight attitude telemetry system utilizing a Raspberry Pi Pico (RP2040) multi-core microcontroller and an MPU6050 IMU, streaming orientation data via serial communication to a custom Python/Pygame artificial horizon ground station display with audio stall/bank angle warnings.</p>
+        </div>
+        <dl class="project-details-grid">
+          <div><dt>Project</dt><dd>Flight HUD & Gyroscope</dd></div>
+          <div><dt>Type</dt><dd>Personal Project</dd></div>
+          <div><dt>Category</dt><dd>Avionics & Embedded Project</dd></div>
+          <div><dt>Tools</dt><dd>MicroPython, Pygame, CPython, Serial Comm</dd></div>
+        </dl>
+      </div>
+
+      <div class="detail-section">
+        <h3>System Architecture & Subsystems</h3>
+        <ul>
+          <li><b>Dual-Core Microcontroller Logic:</b> Programmed a Raspberry Pi Pico using MicroPython. Core 0 handles MPU6050 IMU readings, calculates pitch/roll with <code>atan2</code>, and streams serial data. Core 1 runs a dedicated worker thread to play 8-bit <code>.wav</code> warning audio files without interrupting telemetry loops.</li>
+          <li><b>Data Filtering:</b> Implemented a simple exponential smoothing filter (&alpha; = 0.1) to reduce sensor noise in pitch and roll calculations.</li>
+          <li><b>Pygame Flight Display:</b> Developed a desktop application using Pygame and PySerial to display a live artificial horizon with pitch ladder markings, bank angle indicators, and visual/audio alert banners.</li>
+        </ul>
+      </div>
+
+      <div class="detail-section">
+        <h3>Hardware & Component Specifications</h3>
+        <div class="table-container">
+          <table class="specs-table">
+            <thead>
+              <tr>
+                <th>Subsystem / Role</th>
+                <th>Target Component</th>
+                <th>Measured Parameter / Function</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Processing Unit</td>
+                <td>Raspberry Pi Pico (RP2040 Dual-Core)</td>
+                <td>Dual-core multi-threading isolating sensor loop on Core 0 and background audio on Core 1.</td>
+              </tr>
+              <tr>
+                <td>Inertial Measurement (IMU)</td>
+                <td>MPU6050 6-Axis Accelerometer & Gyroscope</td>
+                <td>Configured custom <code>SoftI2C</code> pin mapping (SDA: Pin 16, SCL: Pin 17), extracting pitch/roll via <code>atan2</code> with exponential filtering.</td>
+              </tr>
+              <tr>
+                <td>Audio Amplifier Circuit</td>
+                <td>NPN Transistor Driver & Base Resistor</td>
+                <td>Discrete hardware switching circuit protecting Pico GPIO while driving speaker audio pulses.</td>
+              </tr>
+              <tr>
+                <td>Audio Feedback Array</td>
+                <td>PWM Audio Output + Speaker Driver</td>
+                <td>Real-time Cockpit Voice Warnings (Stall, Bank Angle, Pull Up)</td>
+              </tr>
+              <tr>
+                <td>Ground Station Software</td>
+                <td>Python (Pygame & PySerial)</td>
+                <td>Real-time serial data stream processing and active artificial horizon HUD rendering with visual alerts.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="media-section">
+        <h3>Build & System Verification Gallery</h3>
+        <div class="media-grid">
+          <figure>
+            <img class="lightbox-trigger" src="Gyroscope_Project/Assets/1.jpeg" alt="Assembled breadboard circuit">
+            <figcaption><b>Hardware Assembly:</b> Pico, MPU6050, and DIY transistor audio driver circuit.</figcaption>
+          </figure>
+          
+          <figure>
+            <img class="lightbox-trigger" src="Gyroscope_Project/Assets/2.jpeg" alt="Disassembled layout of components">
+            <figcaption><b>Component Layout:</b> Microcontroller, sensors, discrete transistors, and speaker.</figcaption>
+          </figure>
+
+          <figure>
+            <img class="lightbox-trigger" src="Gyroscope_Project/Assets/3.png" alt="Fritzing circuit schematic diagram">
+            <figcaption><b>Circuit Schematic:</b> Custom Fritzing diagram showing I2C pin mapping and transistor driver circuit.</figcaption>
+          </figure>
+
+          <figure>
+            <video controls preload="metadata" style="width: 100%; border-radius: 8px;">
+              <source src="Gyroscope_Project/Assets/Video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <figcaption><b>Live Hardware Demonstration:</b> Real-time attitude tracking and auditory warnings.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Project 05 Details -->
+    <section id="project-5" class="project-card">
+      <div class="project-header">
+        <div>
+          <span class="project-num">Project 05</span>
+          <h2>Ultrasonic Radar & Sweep Display</h2>
+          <p class="project-summary">Engineered a mechatronic scanning radar using a Raspberry Pi Pico, servo motor, and ultrasonic sensor, streaming polar coordinate telemetry via serial communication to a custom Pygame radar display featuring trailing fade vectors and proximity threat alerts.</p>
+        </div>
+        <dl class="project-details-grid">
+          <div><dt>Project</dt><dd>Ultrasonic Radar Sweep</dd></div>
+          <div><dt>Type</dt><dd>Personal Project</dd></div>
+          <div><dt>Category</dt><dd>Mechatronics & Tracking System</dd></div>
+          <div><dt>Tools</dt><dd>MicroPython, Pygame, PWM, Serial Comm</dd></div>
+        </dl>
+      </div>
+
+      <div class="detail-section">
+        <h3>System Architecture & Subsystems</h3>
+        <ul>
+          <li><b>Scanning & Measurement Actuation:</b> Programmed PWM control on the Raspberry Pi Pico to sweep a servo motor across 180° while simultaneously triggering an ultrasonic distance sensor to measure target range.</li>
+          <li><b>Non-Blocking Audio Feedback:</b> Implemented a millisecond-tick timer (`time.ticks_ms`) to scale active buzzer beep frequencies dynamically based on object proximity without interrupting servo sweep timing.</li>
+          <li><b>Python Ground Station Radar:</b> Developed a Pygame interface rendering polar grid lines, a real-time sweep needle, and a transparent alpha-blended decay trail for historical sector tracking.</li>
+        </ul>
+      </div>
+
+      <div class="detail-section">
+        <h3>Hardware Component Specifications</h3>
+        <div class="table-container">
+          <table class="specs-table">
+            <thead>
+              <tr>
+                <th>Subsystem / Role</th>
+                <th>Target Component</th>
+                <th>Measured Parameter / Function</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sweep Actuator</td>
+                <td>SG90 Servo Motor (PWM 50Hz)</td>
+                <td>Precise 180° directional sweeping and sector positioning.</td>
+              </tr>
+              <tr>
+                <td>Range Finder</td>
+                <td>Ultrasonic Distance Sensor (Trig/Echo)</td>
+                <td>High-precision time-of-flight distance calculation (2 cm to 50 cm).</td>
+              </tr>
+              <tr>
+                <td>Proximity Alert</td>
+                <td>Active Buzzer Module</td>
+                <td>Distance-mapped audible warning tones (faster beeps at closer ranges).</td>
+              </tr>
+              <tr>
+                <td>Ground Station GUI</td>
+                <td>Python (Pygame & PySerial)</td>
+                <td>Serial telemetry parsing and live polar radar sweep rendering.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="media-section">
+        <h3>Build & System Verification Gallery</h3>
+        <div class="media-grid">
+          <figure>
+            <img class="lightbox-trigger" src="Radar_Project/Assets/1.jpeg" alt="Radar component layout">
+            <figcaption><b>Component Layout:</b> Pico, ultrasonic sensor, servo motor, and buzzer module.</figcaption>
+          </figure>
+          <figure>
+            <img class="lightbox-trigger" src="Radar_Project/Assets/2.png" alt="Assembled radar hardware">
+            <figcaption><b>Circuit Schematic:</b>Fritzing diagram illustrating wiring for the Pico, servo, ultrasonic sensor, and buzzer.</figcaption>
+          </figure>
+          <figure>
+            <img class="lightbox-trigger" src="Radar_Project/Assets/3.jpeg" alt="Working radar setup next to laptop">
+            <figcaption><b>Test Bench:</b> Active scanning setup communicating live telemetry to the Pygame GUI.</figcaption>
+          </figure>
+          <figure>
+            <video controls preload="metadata" style="width: 100%; border-radius: 8px;">
+              <source src="Radar_Project/Assets/Video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <figcaption><b>Live Sweep Demonstration:</b> Real-time object detection and radar display plotting.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience / Background Section -->
+    <section id="experience" class="content-section">
+      <h2>Experience & Education</h2>
+      <div class="timeline">
+        
+        <!-- Silk Way West -->
+        <div class="timeline-item">
+          <span class="timeline-date">August 2026</span>
+          <div class="timeline-content">
+            <h3>MRO Aerospace Engineer Intern</h3>
+            <p class="timeline-org">
+              <a href="https://www.swt.az/" target="_blank" rel="noopener" class="org-link">
+                <img src="assets/SW_Logo.jpg" alt="Silk Way Technics Logo" class="timeline-logo"> 
+                Silk Way Technics ↗
+              </a>
+            </p>
+            <p>Gained hands-on MRO experience under EASA Part 145 regulations, observing heavy hangar maintenance, turbine engine overhauls, avionics inspections, and structural/composite repairs on commercial aircraft (Boeing, Airbus, and Embraer fleets).</p>
+          </div>
+        </div>
+
+        <!-- University of Bristol -->
+        <div class="timeline-item">
+          <span class="timeline-date">2025 – 2028</span>
+          <div class="timeline-content">
+            <h3>BEng Aerospace Engineering</h3>
+            <p class="timeline-org">
+              <a href="https://www.bristol.ac.uk" target="_blank" rel="noopener" class="org-link">
+                <img src="assets/Bristol_Logo.jpg" alt="University of Bristol Logo" class="timeline-logo"> 
+                University of Bristol ↗
+              </a>
+            </p>
+            <p>
+              <b>Relevant Modules:</b> Aerodynamics, Fluid Mechanics, Structures & Materials, Dynamics, Engineering Mathematics, Space Systems, and AVDASI (UAV Design, Manufacture & Test).
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+      <h2>Get in Touch</h2>
+      <p>If you'd like to discuss my projects or review full documentation, feel free to reach out:</p>
+      <div class="contact-links">
+        <p><b>Email (Primary):</b> <a href="mailto:sahin.akbarzade.2007@gmail.com">sahin.akbarzade.2007@gmail.com</a></p>
+        <p><b>Academic Email:</b> <a href="mailto:rm25033@bristol.ac.uk">rm25033@bristol.ac.uk</a></p>
+        <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/shahin-akbarzade-49428327b" target="_blank" rel="noopener">LinkedIn Profile ↗</a></p>
+        <p><b>GitHub:</b> <a href="https://www.github.com/Shahin07-bristol" target="_blank" rel="noopener">GitHub Profile ↗</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Shahin Akbarzade. Hosted on GitHub Pages.</p>
+  </footer>
+
+  <!-- Lightbox Modal Container -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <div class="lightbox-content-wrapper">
+      <img class="lightbox-img" id="lightbox-img" src="" alt="Enlarged view">
+      <a id="lightbox-download" class="lightbox-download-btn" href="" download>Download</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
